@@ -109,11 +109,8 @@ async def async_setup_entry(hass, config_entry, async_add_entities: bool):
         )
 
     # Add presence sensing entities from options
-    all_presence_sensor_entities = (
-        all_presence_sensor_entities
-        + options.get(
-            CONF_PRESENCE_SENSOR_ENTITIES, DEFAULT_PRESENCE_SENSOR_ENTITIES
-        )
+    all_presence_sensor_entities = all_presence_sensor_entities + options.get(
+        CONF_PRESENCE_SENSOR_ENTITIES, DEFAULT_PRESENCE_SENSOR_ENTITIES
     )
 
     # Check if there are any presence sensing entities
@@ -185,9 +182,7 @@ class LightControlSwitch(SwitchEntity, RestoreEntity):
             ATTR_PRESENCE_SENSOR_ENTITIES: self._presence_sensor_entities,
         }
 
-        _LOGGER.debug(
-            "Light control switch created (%s)", self._unique_id
-        )
+        _LOGGER.debug("Light control switch created (%s)", self._unique_id)
 
     @property
     def name(self):

@@ -16,17 +16,11 @@ CONF_NAME, DEFAULT_NAME = "name", "default"
 CONF_AREA_ID, DEFAULT_AREA_ID = "area_id", "test_area"
 CONF_USE_AREA_LIGHTS, DEFAULT_USE_AREA_LIGHTS = "use_area_lights", True
 CONF_LIGHTS, DEFAULT_LIGHTS = "lights", []
-(
-    CONF_USE_AREA_PRESENCE_SENSORS,
-    DEFAULT_USE_AREA_PRESENCE_SENSORS,
-) = (
+(CONF_USE_AREA_PRESENCE_SENSORS, DEFAULT_USE_AREA_PRESENCE_SENSORS,) = (
     "use_area_presence_sensor_entities",
     True,
 )
-(
-    CONF_SENSOR_DEVICE_CLASSES,
-    DEFAULT_SENSOR_DEVICE_CLASSES,
-) = (
+(CONF_SENSOR_DEVICE_CLASSES, DEFAULT_SENSOR_DEVICE_CLASSES,) = (
     "area_presence_sensor_device_classes",
     [
         BinarySensorDeviceClass.MOTION,
