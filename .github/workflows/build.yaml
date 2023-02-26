@@ -3,6 +3,7 @@ name: Validate with hassfest and pre-commit and test with pytest
 on:
   push:
     branches:
+      - main
       - 'hotfix/**'
       - 'feature/**'
       - 'release/**'
