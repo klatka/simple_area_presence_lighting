@@ -1,0 +1,40 @@
+{
+    "title": "Simple Area Presence Lighting",
+    "config": {
+        "abort": {
+            "already_configured": "Gerät ist bereits konfiguriert"
+        },
+        "error": {
+            "unknown": "Unerwarteter Fehler"
+        },
+        "step": {
+            "user": {
+                "title": "Simple Area Presence Lighting Konfiguration",
+                "description": "Benutzerdefinierte Komponente für Home Assistant zur Verknüpfung von Beleuchtung und Anwesenheit in einem Bereich",
+                "data": {
+                    "name": "Name (Suffix der erstellten Entitäten)"
+                }
+            }
+        }
+    },
+    "options": {
+        "error": {
+            "unknown": "Unerwarteter Fehler"
+        },
+        "step": {
+            "init": {
+                "title": "Simple Area Presence Lighting Optionen",
+                "description": "Konfiguriere die Komponente und verknüpfe Anwesenheitssensoren mit Leuchten",
+                "data": {
+                    "area_id": "Bereich",
+                    "use_area_lights": "Verwenden Sie Lichter in dem Bereich",
+                    "lights": "Zusätzliche Lichter",
+                    "use_area_presence_sensor_entities": "Verwendung von Binärsensoren in dem für die Anwesenheitserfassung verwendeten Bereich",
+                    "area_presence_sensor_device_classes": "Geräteklassen von Anwesenheitssensoren, die einbezogen werden sollen",
+                    "presence_sensor_entities": "Binärsensoren zur Anwesenheitserfassung",
+                    "create_light_group": "Lichtgruppe erstellen"
+                }
+            }
+        }
+    }
+}

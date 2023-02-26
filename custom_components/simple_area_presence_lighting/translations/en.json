@@ -1,0 +1,40 @@
+{
+    "title": "Simple Area Presence Lighting",
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "title": "Simple Area Presence Lighting Config",
+                "description": "Custom component for Home Assistant for linking lighting with presence in an area",
+                "data": {
+                    "name": "Name (suffix of the created entities)"
+                }
+            }
+        }
+    },
+    "options": {
+        "error": {
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "init": {
+                "title": "Simple Area Presence Lighting Options",
+                "description": "Configure the component and link some presence sensors with some lights",
+                "data": {
+                    "area_id": "Area",
+                    "use_area_lights": "Use lights in the area",
+                    "lights": "Additional lights",
+                    "use_area_presence_sensor_entities": "Use binary sensors in the area used for presence sensing",
+                    "area_presence_sensor_device_classes": "Device classes of presence sensors to be included",
+                    "presence_sensor_entities": "Binary sensors used for presence sensing",
+                    "create_light_group": "Create light group"
+                }
+            }
+        }
+    }
+}

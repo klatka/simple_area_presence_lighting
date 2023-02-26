@@ -1,0 +1,15 @@
+{
+    "domain": "simple_area_presence_lighting",
+    "name": "Simple Area Presence Lighting",
+    "version": "0.0.1",
+    "integration_type": "device",
+    "documentation": "https://github.com/klatka/simple_area_presence_lighting/wiki",
+    "issue_tracker": "https://github.com/klatka/simple_area_presence_lighting/issues",
+    "dependencies": [],
+    "after_dependencies": ["template", "group", "binary_sensor", "sensor", "light", "discovery"],
+    "codeowners": ["@klatka"],
+    "config_flow": true,
+    "requirements": [],
+    "loggers": [],
+    "iot_class": "calculated"
+}
